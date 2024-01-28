@@ -374,7 +374,7 @@ gap: 40px;
   list-style: none;
 }
 .social-media-lists{
-  min-width: 264px;
+  max-width: 264px;
   margin-top: 16px;
   padding-right: 16px;
   padding-left: 16px;
@@ -682,7 +682,11 @@ color: var(--backround-white);
     background-color: var(--navy-blue);
     justify-content: center;
     justify-items:center;
-    /*display: flex;*/
+}
+@media screen and (width >= 1158px){
+  .footer{
+    display:flex;
+  }
 }
 .footer-paragraph {
   color: var(--footer-white);
@@ -719,9 +723,10 @@ max-width: 264px;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-@media screen and (width >= 768px){
+@media screen and (width >= 1158px){
   .footer-social-media{
     margin-top: 0px;
+    justify-content: flex-start;
   }
 }
 .footer-social-media-lists{
@@ -730,22 +735,30 @@ max-width: 264px;
   display: flex;
   justify-content: center;
 }
-@media screen and (width >=768px){
+@media screen and (width >=1158px){
+  .footer-social-media-lists{
+    justify-content: flex-start;
+  }
 
 }
 .footer-div{
-  /*display: flex;*/
   align-items: baseline;
   padding-top: 97.5px;
   padding-bottom: 97.5px;
 }
-@media screen and (width >=768px){
+@media screen and (width >=1158px){
   .footer-div{
     padding: var(--padding-vertical-global-second) var(--padding-horizontal-global-second);
+    display: flex;
   }
 }
 .footer-div-second{
-  /*margin-top: 72px;*/
+  margin-top: 0px;
+}
+@media screen and (width >=1158px){
+  .footer-div-second{
+    margin-top:72px;
+  }
 }
 .footer-div-first{
   margin-right: 0px;
@@ -754,7 +767,7 @@ max-width: 264px;
   align-items: center;
 
 } 
-@media screen and (width >=768px){
+@media screen and (width >=1158px){
   .footer-div-first{
     margin-right: 120px;
     align-items: flex-start;
@@ -901,9 +914,15 @@ max-width: 264px;
 .footer-subscribe {
   margin-bottom: 16px;
   margin-top: 72px;
-  /*margin-left: 80px;*/
   display: flex;
   flex-direction: column;
+}
+@media screen  and (width >=1158px) {
+  .footer-subscribe{
+    margin-left: 80px;
+
+  }
+  
 }
 
 .footer-subscribe-p {
@@ -918,6 +937,13 @@ max-width: 264px;
   letter-spacing: 0.32px;
   margin-bottom: 16px;
 }
+@media screen  and (width >=1158px){
+  .footer-subscribe-p{
+    justify-content: flex-start;
+  }
+} {
+  
+}
 
 .footer-form {
   align-items: center;
@@ -926,9 +952,16 @@ max-width: 264px;
   flex-direction: column;
   gap: 24px;
 }
+@media screen and (width >=1158px){
+  .footer-form{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 
 .footer-form-input {
-  min-width: 398px;
+  min-width: 264px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
