@@ -441,6 +441,7 @@ gap: 40px;
   list-style: none;
   padding-left: 0px;
   gap: 72px;
+  column-gap: 16px;
   align-items: center;
   justify-content:center;
   /*padding: 0;*/
@@ -458,8 +459,8 @@ gap: 40px;
   /*height: 88px;*/
 }
 .logo-links{
- /* width: 100%;
-  height: 100%;*/
+  min-width: 190px;
+  min-height: 88px;
   border: 1px solid var(--logo-border);
   border-radius: 4px;
   align-items: center;
@@ -468,6 +469,7 @@ gap: 40px;
   color: var(--logo-border);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .logo-links:hover,
 .logo-links:focus{
   border-color: var(--ocean-blue);
