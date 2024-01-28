@@ -374,10 +374,15 @@ gap: 40px;
   list-style: none;
 }
 .social-media-lists{
-  width: 264px;
-  margin-top: 8px;
+  min-width: 264px;
+  margin-top: 16px;
   padding-right: 16px;
   padding-left: 16px;
+}
+@media screen and (width >=768px){
+  .social-media-lists{
+    margin-top: 8px;
+  }
 }
 .social-media-decoration{
   width: 100%;
@@ -702,17 +707,29 @@ max-width: 264px;
   }
 }
 .footer-social-media{
+  margin-top: 72px;
+  justify-content: center;
+  display: flex;
   color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px
+  margin-bottom: 16px;
+}
+@media screen and (width >= 768px){
+  .footer-social-media{
+    margin-top: 0px;
+  }
 }
 .footer-social-media-lists{
   gap: 16px;
-  padding: 0px;
-  
+  padding: 0px;  
+  display: flex;
+  justify-content: center;
+}
+@media screen and (width >=768px){
+
 }
 .footer-div{
   /*display: flex;*/
@@ -880,10 +897,16 @@ max-width: 264px;
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  margin-bottom: 16px;
+  margin-top: 72px;
+  /*margin-left: 80px;*/
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-subscribe-p {
+  display: flex;
+  justify-content: center;
   color: #fff;
   font-family: Roboto;
   font-size: 16px;
@@ -895,12 +918,15 @@ max-width: 264px;
 }
 
 .footer-form {
+  align-items: center;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   gap: 24px;
 }
 
 .footer-form-input {
-  width: 264px;
+  min-width: 398px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
@@ -914,6 +940,8 @@ max-width: 264px;
 }
 
 .subscribe-button {
+  width:fit-content;
+  justify-content: center;
   display: flex;
   background-color: #4d5ae5;
   color: #ffffff;
