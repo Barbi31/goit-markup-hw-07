@@ -36,11 +36,41 @@ body {
 }
 /* Header*/
 .hero-header{
-  display: none;
-  justify-content: space-between;
   height: 72px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   max-width: 1440px;
+  
+}
+@media  screen and (width >=1158px) {
+  .hero-header{
+    padding: 24px 156px;
+  }
+  
+}
+@media screen and (width >= 768px){
+  .hero-header{
+    padding-right:16px;
+    padding-left:16px;
+    display: contents;
+    align-items: center;
+  }
+}
+
+.icon-menu-svg{
+  
+}
+.hero-navbar-menu-button{
+  background: none;background: ;
+  border: none;
+  justify-content: flex-end;
+  cursor: pointer;
+ 
+}
+@media  screen and (width >=768px) {
+  .hero-navbar-menu-button{
+    display: none;
+  }
+  
 }
 
 
@@ -93,6 +123,15 @@ body {
   gap: 40px;
   justify-content: space-between;
 }
+@media screen and (width < 768px){
+  .navbar-align{
+    margin-left: 0px;
+  }
+  .hero-header{
+    display: unset;
+  }
+  
+}
 .navbar-backround{
   background: var(--white-color);
   border-bottom: 1px solid #e7e9fc;
@@ -104,6 +143,21 @@ body {
 .hero-header-cta{
 display: flex;
 gap: 40px;
+}
+@media screen and (width <1158px){
+  .hero-header-cta{
+    flex-direction: column;
+    gap: 12px;
+    padding-top:16px;
+    padding-bottom:16px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 16px;
+  }
+  .logo-space{
+    padding-left:16px;
+  }
 }
 .hero-title{
   margin: 0 auto;
@@ -1135,5 +1189,34 @@ input:checked + .modal-label-checkbox span:first-child {
   :root{
     --padding-vertical-hero: 188px;
   --padding-horizontal-hero: 472px;
+  }
+}
+@media screen and (width < 768px){
+  .hero-navbar-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 16px 24px 16px;
+    
+
+  }
+}
+@media screen and (width>=1158px){
+  .hero-navbar-menu{
+    padding: 24px 156px 24px 156px;
+  }
+}
+@media screen and (width <768px){
+  .navbar-link{
+    display: none;
+  }
+  .address-style {
+    display: none;
+  }
+}
+@media screen and (width >= 768px){
+  .address-style{
+    gap:12px;
+    
   }
 }
