@@ -22,34 +22,33 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="hero-header navbar-backround ">
-      
+    <header class="hero-header navbar-backround">
+      <div class="hero-navbar-menu">
         <div class="navbar-align container">
           <nav class="navbar">
             <a class="logo link-nav logo-space" href="./index.html"
-              >Web<span class="logo-link" style="color: #2e2f42"
-                >Studio</span>
+              >Web<span class="logo-link" style="color: #2e2f42">Studio</span>
             </a>
-              <!-- MOBILE MENU OPEN -->
-          <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <!-- MOBILE MENU OPEN -->
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
             <ul class="list navbar-align">
               <li>
                 <a
@@ -88,7 +87,7 @@
             </ul>
           </address>
         </div>
-        </div>
+      </div>
     </header>
     <!-- Studio section -->
     <main>
@@ -601,7 +600,7 @@
         </form>
       </div>
     </div>
-    <class class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -619,7 +618,9 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="./index.html" class="menu-link nav-list-active">Studio</a></li>
+        <li>
+          <a href="./index.html" class="menu-link nav-list-active">Studio</a>
+        </li>
         <li><a href="./portfolio.html" class="menu-link">Portfolio</a></li>
         <li><a href="" class="menu-link">Contacts</a></li>
       </ul>
@@ -669,6 +670,7 @@
           </li>
         </ul>
       </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

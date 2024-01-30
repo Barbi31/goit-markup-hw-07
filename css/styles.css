@@ -58,7 +58,7 @@ body {
 
 
 .hero-navbar-menu-button{
-  background: none;background: ;
+  background: none;background:none ;
   border: none;
   justify-content: flex-end;
   cursor: pointer;
@@ -85,6 +85,9 @@ body {
 }
 .logo-space{
   margin-right: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 .logo-link{
   font-family: var(--logo-font-family);
@@ -120,16 +123,9 @@ body {
   display: flex;
   gap: 40px;
   justify-content: space-between;
+  margin-left:0px;
 }
-@media screen and (width < 768px){
-  .navbar-align{
-    margin-left: 0px;
-  }
-  .hero-header{
-    display: unset;
-  }
-  
-}
+
 .navbar-backround{
   background: var(--white-color);
   border-bottom: 1px solid #e7e9fc;
@@ -819,9 +815,11 @@ max-width: 264px;
     gap:24px;
   }
 }
-@media screen and (width >- 1158px){
+@media screen and (width >= 1158px){
   .footer-div{
     padding: var(--padding-vertical-footer) var(--padding-horizontal-global-second);
+    flex-wrap: nowrap;
+    gap:0px;
   }
 }
 .footer-div-second{
@@ -1091,7 +1089,7 @@ input:checked + .modal-label-checkbox span:first-child {
 /* Modal */
 .modal{
   min-width: 392px;
-  min-height: 584px;
+  
   background-color: rgba(46, 47, 66, 0.4);
   display: flex;
   justify-content: center;
@@ -1103,7 +1101,7 @@ input:checked + .modal-label-checkbox span:first-child {
   @media screen and (width >= 768px) {
     .modal{
       max-width: 408px;
-      max-height: 584px;
+      
     }
     
   }
@@ -1162,15 +1160,7 @@ input:checked + .modal-label-checkbox span:first-child {
   .modal-button-svg:focus{
     fill: #FFFFFFFF;
   }
-  @media (max-width: 767px) {
-    .header-nav .list {
-      display: none;
-    }
-    .header-div .contact {
-      display: none;
-    }
-  }
-  
+ 
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -1187,8 +1177,11 @@ input:checked + .modal-label-checkbox span:first-child {
     outline: none;
   }
   
-  @media (min-width: 768px) {
+ @media screen and (width>768px) {
     .menu-toggle {
+      display: none;
+    }
+    .navbar{
       display: none;
     }
   }
@@ -1313,12 +1306,11 @@ input:checked + .modal-label-checkbox span:first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 16px 24px 16px;
+    padding: 24px 16px 24px 16px;}
     
 
   }
-}
-@media screen and (width>=1158px){
+@media screen and (width >= 1158px){
   .hero-navbar-menu{
     padding: 24px 156px 24px 156px;
   }
