@@ -1181,9 +1181,6 @@ input:checked + .modal-label-checkbox span:first-child {
     .menu-toggle {
       display: none;
     }
-    .navbar{
-      display: none;
-    }
   }
   
   .menu-toggle:hover,
