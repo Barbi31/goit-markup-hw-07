@@ -312,6 +312,14 @@ gap: 40px;
     padding-left: 0px;
   }
 }
+@media screen and (width >768px) {
+  .section-about-align{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+  }
+}
 
 
 .section-about-list{
