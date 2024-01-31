@@ -323,11 +323,16 @@ gap: 40px;
 }
 @media screen and (768px<=width <=1158px) {
   .section-about-align{
-    flex-wrap: wrap;
-    flex-direction: row;
-    display:flex;
-    justify-content: center;
     width:769px;
+    columns:2;
+    column-gap: 24px;
+  }
+}
+@media screen and (768px<=width<=1158px){
+  .section-about{
+    
+    align-items: baseline;
+    margin-bottom:72px;
   }
 }
 
@@ -728,6 +733,11 @@ color: var(--backround-white);
   letter-spacing: 0.4px;
   }
   
+}
+@media screen and (768px <= width <=1158px){
+  .subtitle{
+    justify-content: flex-start;
+  }
 }
 
 .content-p{
